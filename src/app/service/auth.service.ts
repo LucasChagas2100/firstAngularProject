@@ -34,4 +34,15 @@ export class AuthService {
     }
     return ok
   }
+
+  adm(){
+    let ok = false //tambem pode declarar como let ok: boolean = false
+
+    if (environment.tipo == 'adm'){
+      ok = true
+    }else{
+      ok= false
+    }
+    return ok
+  }
 }
